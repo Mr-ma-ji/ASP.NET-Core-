@@ -1,0 +1,13 @@
+D:\桌面2\NET Core\T1微服务架构\bin\Debug\netcoreapp3.1\T1微服务架构.exe
+D:\桌面2\NET Core\T1微服务架构\bin\Debug\netcoreapp3.1\T1微服务架构.deps.json
+D:\桌面2\NET Core\T1微服务架构\bin\Debug\netcoreapp3.1\T1微服务架构.runtimeconfig.json
+D:\桌面2\NET Core\T1微服务架构\bin\Debug\netcoreapp3.1\T1微服务架构.runtimeconfig.dev.json
+D:\桌面2\NET Core\T1微服务架构\bin\Debug\netcoreapp3.1\T1微服务架构.dll
+D:\桌面2\NET Core\T1微服务架构\bin\Debug\netcoreapp3.1\T1微服务架构.pdb
+D:\桌面2\NET Core\T1微服务架构\obj\Debug\netcoreapp3.1\T1微服务架构.csprojAssemblyReference.cache
+D:\桌面2\NET Core\T1微服务架构\obj\Debug\netcoreapp3.1\T1微服务架构.AssemblyInfoInputs.cache
+D:\桌面2\NET Core\T1微服务架构\obj\Debug\netcoreapp3.1\T1微服务架构.AssemblyInfo.cs
+D:\桌面2\NET Core\T1微服务架构\obj\Debug\netcoreapp3.1\T1微服务架构.csproj.CoreCompileInputs.cache
+D:\桌面2\NET Core\T1微服务架构\obj\Debug\netcoreapp3.1\T1微服务架构.dll
+D:\桌面2\NET Core\T1微服务架构\obj\Debug\netcoreapp3.1\T1微服务架构.pdb
+D:\桌面2\NET Core\T1微服务架构\obj\Debug\netcoreapp3.1\T1微服务架构.genruntimeconfig.cache

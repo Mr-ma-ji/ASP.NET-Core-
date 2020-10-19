@@ -1,0 +1,12 @@
+D:\桌面2\NET Core\ASP.NET-Core-\异步编程\bin\Debug\netcoreapp3.1\异步编程.exe
+D:\桌面2\NET Core\ASP.NET-Core-\异步编程\bin\Debug\netcoreapp3.1\异步编程.deps.json
+D:\桌面2\NET Core\ASP.NET-Core-\异步编程\bin\Debug\netcoreapp3.1\异步编程.runtimeconfig.json
+D:\桌面2\NET Core\ASP.NET-Core-\异步编程\bin\Debug\netcoreapp3.1\异步编程.runtimeconfig.dev.json
+D:\桌面2\NET Core\ASP.NET-Core-\异步编程\bin\Debug\netcoreapp3.1\异步编程.dll
+D:\桌面2\NET Core\ASP.NET-Core-\异步编程\bin\Debug\netcoreapp3.1\异步编程.pdb
+D:\桌面2\NET Core\ASP.NET-Core-\异步编程\obj\Debug\netcoreapp3.1\异步编程.AssemblyInfoInputs.cache
+D:\桌面2\NET Core\ASP.NET-Core-\异步编程\obj\Debug\netcoreapp3.1\异步编程.AssemblyInfo.cs
+D:\桌面2\NET Core\ASP.NET-Core-\异步编程\obj\Debug\netcoreapp3.1\异步编程.csproj.CoreCompileInputs.cache
+D:\桌面2\NET Core\ASP.NET-Core-\异步编程\obj\Debug\netcoreapp3.1\异步编程.dll
+D:\桌面2\NET Core\ASP.NET-Core-\异步编程\obj\Debug\netcoreapp3.1\异步编程.pdb
+D:\桌面2\NET Core\ASP.NET-Core-\异步编程\obj\Debug\netcoreapp3.1\异步编程.genruntimeconfig.cache

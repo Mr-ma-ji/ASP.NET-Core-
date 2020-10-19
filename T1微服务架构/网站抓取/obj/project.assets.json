@@ -1,0 +1,121 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "vue/2.6.11": {
+        "type": "package"
+      },
+      "vue.js/1.0.22": {
+        "type": "package"
+      }
+    }
+  },
+  "libraries": {
+    "vue/2.6.11": {
+      "sha512": "QvC2UH8Eaz/aEc6+bf1WpdtZl8iAToPuPxI2To6yDfOyqcTL4fvAlpNix1TXzSVQhPcABmbDcDt49uq/HcNmOQ==",
+      "type": "package",
+      "path": "vue/2.6.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Scripts/vue.js",
+        "Content/Scripts/vue.min.js",
+        "images/icon.png",
+        "license/LICENSE.txt",
+        "vue.2.6.11.nupkg.sha512",
+        "vue.nuspec"
+      ]
+    },
+    "vue.js/1.0.22": {
+      "sha512": "8R5L3J2E9UwnpVy6FsnP8Y2IOOVynotgV4wQZBZQMksTxD3wwBcfIS4Bk+maDFNDGfNVkqPdlLjARfBffTHhJA==",
+      "type": "package",
+      "path": "vue.js/1.0.22",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Scripts/vue.js",
+        "Content/Scripts/vue.min.js",
+        "vue.js.1.0.22.nupkg.sha512",
+        "vue.js.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "vue >= 2.6.11",
+      "vue.js >= 1.0.22"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\拉夫特尔\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\桌面2\\NET Core\\ASP.NET-Core-\\网站抓取\\网站抓取.csproj",
+      "projectName": "网站抓取",
+      "projectPath": "D:\\桌面2\\NET Core\\ASP.NET-Core-\\网站抓取\\网站抓取.csproj",
+      "packagesPath": "C:\\Users\\拉夫特尔\\.nuget\\packages\\",
+      "outputPath": "D:\\桌面2\\NET Core\\ASP.NET-Core-\\网站抓取\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\拉夫特尔\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "dependencies": {
+          "vue": {
+            "target": "Package",
+            "version": "[2.6.11, )"
+          },
+          "vue.js": {
+            "target": "Package",
+            "version": "[1.0.22, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

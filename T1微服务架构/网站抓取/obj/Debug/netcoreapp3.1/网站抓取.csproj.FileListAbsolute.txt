@@ -1,0 +1,12 @@
+D:\桌面2\NET Core\ASP.NET-Core-\网站抓取\bin\Debug\netcoreapp3.1\网站抓取.exe
+D:\桌面2\NET Core\ASP.NET-Core-\网站抓取\bin\Debug\netcoreapp3.1\网站抓取.deps.json
+D:\桌面2\NET Core\ASP.NET-Core-\网站抓取\bin\Debug\netcoreapp3.1\网站抓取.runtimeconfig.json
+D:\桌面2\NET Core\ASP.NET-Core-\网站抓取\bin\Debug\netcoreapp3.1\网站抓取.runtimeconfig.dev.json
+D:\桌面2\NET Core\ASP.NET-Core-\网站抓取\bin\Debug\netcoreapp3.1\网站抓取.dll
+D:\桌面2\NET Core\ASP.NET-Core-\网站抓取\bin\Debug\netcoreapp3.1\网站抓取.pdb
+D:\桌面2\NET Core\ASP.NET-Core-\网站抓取\obj\Debug\netcoreapp3.1\网站抓取.csprojAssemblyReference.cache
+D:\桌面2\NET Core\ASP.NET-Core-\网站抓取\obj\Debug\netcoreapp3.1\网站抓取.AssemblyInfoInputs.cache
+D:\桌面2\NET Core\ASP.NET-Core-\网站抓取\obj\Debug\netcoreapp3.1\网站抓取.AssemblyInfo.cs
+D:\桌面2\NET Core\ASP.NET-Core-\网站抓取\obj\Debug\netcoreapp3.1\网站抓取.dll
+D:\桌面2\NET Core\ASP.NET-Core-\网站抓取\obj\Debug\netcoreapp3.1\网站抓取.pdb
+D:\桌面2\NET Core\ASP.NET-Core-\网站抓取\obj\Debug\netcoreapp3.1\网站抓取.genruntimeconfig.cache
