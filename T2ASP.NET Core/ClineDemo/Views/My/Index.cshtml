@@ -1,0 +1,40 @@
+﻿
+@{
+	ViewData["Title"] = "Index";
+}
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<h1>api测试</h1>
+<div id="app">
+
+	<table class="table table-striped table-hover">
+		<thead>
+			<tr>
+				<th>编号</th>
+				<th>姓名</th>
+				<th>年龄</th>
+				<th>性别</th>
+			</tr>
+		</thead>
+		<tbody id="pp">
+		</tbody>
+	</table>
+</div>
+<script>
+	$.ajax({
+		type: "get",
+		url: "https://localhost:44377/api/my",
+		success: function (data) {
+			tablelist = data;
+			console.log(tablelist);
+			var sr = "";
+			for (var i = 0; i < tablelist.length; i++) {
+				sr += "<tr><td> " + tablelist[i].stuid + "</td><td>" +tablelist[i].stuname + "</td><td> " + tablelist[i].stuage + "</td> <td> " +
+					tablelist[i].stusex + "</td></tr >";
+			}
+			$("#pp").html(sr);
+
+		}
+	});
+
+</script>
+
