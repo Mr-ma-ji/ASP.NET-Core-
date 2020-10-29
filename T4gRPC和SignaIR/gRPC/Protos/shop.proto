@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+option csharp_namespace = "MyShop";
+
+//导入谷歌文件
+import "google/protobuf/empty.proto";
+package Shopping;
+service PorductManager{
+rpc GetProductByID(ProductRequest) returns (ProductResponse) ;
+rpc GetProductList(google.protobuf.Empty) returns (ProductListResponse) ;
+}
+//声明Product实体
+message Product{
+int32 ProductID=1;
+string ProductName=2;
+int32 ProductPrice=3;
+int32 CategoryID=4;
+}
+//GetProductByID参数
+message ProductRequest{
+int32 id=1;
+}
+//GetProductByID响应数据
+message ProductResponse{
+Product product=1;
+}
+//GetProductList响应数据
+message ProductListResponse{
+//返回数组
+repeated Product products=1;
+}
+
