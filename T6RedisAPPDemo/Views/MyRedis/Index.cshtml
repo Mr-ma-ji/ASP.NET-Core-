@@ -1,0 +1,21 @@
+﻿@using RedisAPPDemo.Models
+@{
+	ViewData["Title"] = "Index";
+}
+
+<h3>redis应用</h3>
+<div class="btn-group">
+	<a href="~/MyRedis/add" class="btn btn-primary">存储</a>
+	<a href="~/MyRedis/request" class="btn btn-success">读取</a>
+	<a href="~/MyRedis/remove" class="btn btn-danger">删除</a>
+</div>
+@ViewBag.msg
+@if (ViewBag.stu != null)
+{
+	<span>编号：</span>
+	@ViewBag.stu.StuId
+	<span>姓名：</span>
+	@ViewBag.stu.StuName
+	<span>年龄：</span>
+	@ViewBag.stu.StuAge
+}

@@ -1,0 +1,89 @@
+﻿@model MVCFootDemo.Models.FoodList
+@{
+	ViewBag.Title = "updfoot";
+}
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+<div class="container">
+	<h2>商品添加</h2>
+
+	<div class="form-group">
+		<a href="~/index/Index">返回首页</a>
+	</div>
+	<div class="col-lg-5 col-lg-offset-3">
+		<div class="form-group">
+			
+			<label>菜名</label>
+			@Html.TextBoxFor(x => x.FoodName, new { @class = "form-control", @value = Model.FoodName })
+		</div>
+		<div class="form-group">
+			<label>类别</label>
+			@Html.DropDownListFor(x => x.TypeID, ViewBag.select as List<SelectListItem>, new { @class = "form-control" })
+		</div>
+		<div class="form-group">
+			<label>价格</label>
+			@Html.TextBoxFor(x => x.Price, new { @class = "form-control", @value = Model.Price })
+		</div>
+		<div class="form-group">
+			<label>图片</label>
+			<label for="imgfile" class="btn btn-default">上传</label>
+			<input type="file" id="imgfile" value="" class="hidden" onchange="filechang(this)" />
+			<img src="~/img/@Model.Pic" width="90" class="img-thumbnail" id="imgshow" />
+		</div>
+		<div class="form-group">
+			<label>销量</label>
+			@Html.TextBoxFor(x => x.SalesVolume, new { @class = "form-control", @value = Model.SalesVolume })
+		</div>
+		<div class="form-group">
+			<a href="#" class="btn btn-success form-control" onclick="addfile()">提交</a>
+		</div>
+	</div>
+</div>
+<script>
+	//提交
+	function addfile() {
+		//获取图片
+		var fileimg = document.getElementById("imgfile").files;
+		var FoodName = document.getElementById("FoodName").value;
+		var SalesVolume = document.getElementById("SalesVolume").value;
+		var Price = document.getElementById("Price").value;
+		var TypeID = document.getElementById("TypeID").value;
+		var fdata = new FormData();
+		fdata.append("FoodName", FoodName);
+		fdata.append("SalesVolume", SalesVolume);
+		fdata.append("Price", Price);
+		fdata.append("TypeID", TypeID);
+		fdata.append("fileimg", fileimg[0]);
+		//发起请求
+		$.ajax(
+			{
+				url: "/index/addfoot",
+				type: "post",
+				data: fdata,
+				processData: false,
+				contentType: false,
+				success: function (e) {
+					if (e == "true") {
+						alert("添加成功");
+						window.location.href = "/index/Index";
+					}
+					if (e == "false") {
+						alert("添加失败！请联系管理员")
+					}
+				}
+			}
+		);
+
+	}
+	//图片预览
+	function filechang(fil) {
+		var fileimg = fil.files[0];
+		var red = new FileReader();
+		red.onload = function (val) {
+			var im = document.getElementById("imgshow");
+			im.src = val.target.result;
+		}
+		red.readAsDataURL(fileimg);
+	}
+</script>
+

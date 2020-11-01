@@ -1,0 +1,70 @@
+﻿@model List<MVCFootDemo.Models.FoodList>
+@{
+	ViewBag.Title = "Index";
+}
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+<div>
+	<div class="container">
+		<h2>商品查看</h2>
+		<div class="form-group"><a href="~/index/addfoot">添加商品</a></div>
+		<table class="table table-striped table-hover text-center">
+			<tr>
+				<th class="text-center">编号</th>
+				<th class="text-center">菜名</th>
+				<th class="text-center">类别</th>
+				<th class="text-center">价钱</th>
+				<th class="text-center">图片</th>
+				<th class="text-center">销量</th>
+				<th class="text-center">操作</th>
+				<th class="text-center">修改</th>
+			</tr>
+			@foreach (var s in Model)
+			{
+		<tr>
+			<td>@s.FoodID</td>
+			<td>@s.FoodName</td>
+			<td>
+				@Html.Action("getType", "index", new { id = s.TypeID })
+			</td>
+			<td>@s.Price</td>
+			<td>
+				<img src="~/img/@s.Pic" width=" 60" class="img-thumbnail" />
+			</td>
+			@if (s.SalesVolume < 100)
+			{
+				<td style="color:red">销量滞后</td>
+			}
+			else
+			{
+				<td>@s.SalesVolume	</td>
+			}
+
+			<td><a href="#" class="btn btn-link" onclick="del(@s.FoodID,this)">删除</a></td>
+			<td><a href="~/index/updfoot?id=@s.FoodID" class="btn btn-link">修改</a></td>
+		</tr>
+			}
+		</table>
+	</div>
+</div>
+<script>
+	function del(id,a) {
+		if (confirm("确定要删除吗？")) {
+			$.ajax({
+				url: "/index/delfoot",
+				type: "get",
+				data: { "id": id },
+				success: function (e) {
+					if (e == "true") {
+						alert("删除成功");
+						$(a).parent().parent().remove();
+					}
+					if (e == "false") {
+						alert("删除失败！请联系管理员")
+					}
+				}
+			});
+		}
+
+	}
+</script>
