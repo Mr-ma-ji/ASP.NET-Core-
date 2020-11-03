@@ -1,0 +1,25 @@
+﻿
+@{
+	ViewData["Title"] = "Login";
+}
+
+<h1>登录</h1>
+
+@using (Html.BeginForm("LoginInfo", "Home", FormMethod.Post))
+{
+	<div class="col-6">
+		<div class="form-group">
+			<label>账号：</label>
+			<input type="text" name="username" class="form-control" />
+		</div>
+		<div class="form-group">
+			<label>密码：</label>
+			<input type="text" name="psw" class="form-control" />
+		</div>
+		<div class="form-group">
+			<input type="submit" class="form-control btn btn-success" />
+		</div>
+	</div>
+}
+
+

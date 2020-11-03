@@ -30,8 +30,10 @@ namespace RedisAPPDemo.Controllers
         }
         public IActionResult add()
         {
+            //设置保存的时长，缓存数据为60秒，即60秒后自动移除键销毁数据
+            var option = new DistributedCacheEntryOptions().SetSlidingExpiration(TimeSpan.FromSeconds(60));
             //添加一条数据
-            redis.SetString("time",DateTime.Now.ToString());
+            redis.SetString("time",DateTime.Now.ToString(),option);
             //添加对象
             Student student = new Student() { 
                 StuId=1,

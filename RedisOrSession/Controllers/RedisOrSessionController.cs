@@ -11,11 +11,13 @@ namespace RedisOrSession.Controllers
     {
         public IActionResult Index()
         {
+            //将数据保存到session中
             HttpContext.Session.SetString("time",DateTime.Now.ToString());
             return View();
         }
         public IActionResult indexOf()
         {
+            //从session中读取数据
             ViewBag.sess = HttpContext.Session.GetString("time");
             return View("Index");
         }
